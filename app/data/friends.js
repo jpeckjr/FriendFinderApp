@@ -46,7 +46,8 @@ let friendsArray = [
           2,
           2,
         ]
-     }
+     },
+
   ];
 
   module.exports = friendsArray;
