@@ -14,7 +14,13 @@ module.exports = function(app) {
     var scoresArray =[];
     var userInput = req.body;
 
-    console.log("this is the req.body: " + req.body);
+    console.log("this is the req.body: ");
+    console.log(req.body)
+
+    // add new user to data array
+    friends.push(req.body)
+    console.log("all the friends")
+    console.log(friends)
     var userresponse = userInput.scores;
     // var me = JSON.stringify(userInput);
     console.log(userInput.scores);
