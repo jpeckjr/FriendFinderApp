@@ -18,7 +18,7 @@ module.exports = function(app) {
     console.log(req.body)
 
     // add new user to data array
-    friends.push(req.body)
+  
     console.log("all the friends")
     console.log(friends)
     var userresponse = userInput.scores;
@@ -37,6 +37,7 @@ module.exports = function(app) {
         for (var j=0; j<userresponse.length; j++){
             diff += Math.abs(parseInt(friends[i].scores[j]- userresponse[j]))
         }
+
        scoresArray.push(diff);
     }
 
@@ -54,7 +55,7 @@ module.exports = function(app) {
     console.log(bestfriend);
 
     console.log(typeof(friends));
-    // friends.push(req.body);
+    friends.push(req.body);
   });
 };
 
